@@ -1,5 +1,5 @@
 {
-  "name": "scrapping",
+  "name": "show-time",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,6 +8,6 @@
     "@types/node": "^20.11.5"
   },
   "scripts": {
-    "test": "npx playwright test"
+    "start-crawler": "npx playwright test --project='chromium' crawler.spec.ts"
   }
 }
