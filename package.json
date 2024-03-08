@@ -8,6 +8,6 @@
     "@types/node": "^20.11.5"
   },
   "scripts": {
-    "start-crawler": "npx playwright test --project='chromium' crawler.spec.ts"
+    "start-crawler": "FILENAME='./src/eventlist.json' npx playwright test --project='chromium' crawler.spec.ts"
   }
 }
