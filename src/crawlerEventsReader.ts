@@ -1,14 +1,14 @@
-import { EventType } from "./types";
+import { ArtistSearch } from "./types";
 
 const fs = require("node:fs");
 const defaultFilename = process.env.FILENAME;
 
-export const eventsList = (filename = defaultFilename): EventType[] => {
+export const eventsList = (filename = defaultFilename): ArtistSearch[] => {
   if (!filename) {
     throw new Error("Filename is required");
   }
 
-  let events: EventType[];
+  let events: ArtistSearch[];
 
   try {
     const data = fs.readFileSync(filename, "utf8");

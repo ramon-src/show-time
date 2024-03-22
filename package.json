@@ -9,5 +9,8 @@
   },
   "scripts": {
     "start-crawler": "FILENAME='./src/eventlist.json' npx playwright test --project='chromium' crawler.spec.ts"
+  },
+  "dependencies": {
+    "mongodb": "^6.5.0"
   }
 }
